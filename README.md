@@ -1,6 +1,8 @@
-# ADS-BUSQUEDA
+## busqueda-optimizacion
 
-Cambios realizado sobre la estructura de datos.
+Diferencia de tiempos utilizando Listas con nivel de complejidad O(N) y Lista con nivel de complejidad O(1)
+
+Notación O(N).
 
 Antes
 ```
@@ -14,7 +16,7 @@ private final int sizeLogLines;
         this.uniqueIps = new ArrayList<String>();
     }
 ```
-Despues
+Notacioón O(1)
 ```
 public class LogReader implements Iterable<LogLine> {
     private final int sizeLogLines;
@@ -27,7 +29,7 @@ public class LogReader implements Iterable<LogLine> {
         this.uniqueIps = new HashSet<String>();
     }
 ```
-Resultados.
+Resultados de tiempos.
 ```
 Leyendo los datos...
 Número de lineas: 100000
